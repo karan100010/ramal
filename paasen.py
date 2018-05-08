@@ -32,11 +32,7 @@ price_list[0]=s0
 price_list= np.zeros_like(daily_return)
 price_list[0]
 log_return.plot(figsize=(10,6))
-price_list
-sO
-s0
 s0=s0.Close
-s0
 price_list[0]=s0
 for i in range(1,i_interval):
     price_list[i]=price_list[i-1]*daily_return[i]
