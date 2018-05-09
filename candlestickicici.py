@@ -8,7 +8,6 @@ import matplotlib.dates as mdates
 
 
 icici=pandas.read_csv("ICICIBANK.NS.csv")
-icici['Date']=icici['Date'].apply(mdates.date2num)
 icici['Date']=pandas.to_datetime(icici['Date'])
 icici['Date']=icici['Date'].apply(mdates.date2num)
 
